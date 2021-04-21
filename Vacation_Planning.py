@@ -38,3 +38,20 @@ for i in d:
     list2=list2+[d[i]]
 print(list1,list2)
 
+
+def least_amount():
+    for i in range(0, len(list2)):
+        if list2[i] == min(list2):
+            print("\nYou should visit {} to spend the least amount of money".format(list1[i]))
+            list1[i]
+#Q.1)
+if n==7 :
+    least_amount()
+
+#Q.2)
+elif n==4 or n==10 or n==14:
+    least_amount()
+
+else:
+    print("\nInvalid duration entry. Can't calculate for the given entry!!!\n")
+
