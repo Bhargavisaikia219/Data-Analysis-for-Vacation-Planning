@@ -55,12 +55,19 @@ elif n==4 or n==10 or n==14:
 else:
     print("\nInvalid duration entry. Can't calculate for the given entry!!!\n")
 
-#Q.3 
+#Q.3
 budget= int(input("Tell me your budget:\n"))
+
+def duration_based_plan():
+    for i in range(0,len(list2)):
+        if list2[i]==min(list2):
+            print(list1[i])
+        elif list2[i]==max(list2):
+            print(list1[i])
 
 if budget==1000 or budget == 600  or budget== 2000 or budget==1500:
     if all(x <budget for x in list2):
-        pass
+        duration_based_plan()
 
 else:
     print("Invalid budget")
