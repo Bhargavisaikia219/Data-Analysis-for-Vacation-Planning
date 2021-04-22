@@ -55,3 +55,12 @@ elif n==4 or n==10 or n==14:
 else:
     print("\nInvalid duration entry. Can't calculate for the given entry!!!\n")
 
+#Q.3 
+budget= int(input("Tell me your budget:\n"))
+
+if budget==1000 or budget == 600  or budget== 2000 or budget==1500:
+    if all(x <budget for x in list2):
+        pass
+
+else:
+    print("Invalid budget")
